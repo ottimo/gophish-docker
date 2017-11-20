@@ -4,7 +4,7 @@ MAINTAINER Scott Gillespie <github@scottgillespie.name>
 ENV RELEASE 0.1.2
 
 RUN apt-get update && \
-	apt-get install -y unzip && \
+	apt-get install -y unzip ca-certificates && \
 	apt-get clean
 
 WORKDIR /
